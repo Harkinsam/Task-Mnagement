@@ -60,13 +60,13 @@ This provides interactive API documentation where you can test all available end
 ## API Endpoints
 
 - **User Management**:
-  - `POST /api/users` - Create a new user
-  - `GET /api/users/{id}` - Get user by ID
+  - `POST /users` - Create a new user
+  - `GET /users/{id}` - Get user by ID
 
 - **Task Management**:
-  - `POST /api/tasks` - Create a new task
-  - `GET /api/tasks/{id}` - Get task by ID
-  - `PUT /api/tasks/{id}` - Update task
+  - `POST /tasks` - Create a new task
+  - `GET /tasks/{id}` - Get task by ID
+  - `PUT /users/{id}/tasks`- Update task
     
 
 ## Design Decisions
