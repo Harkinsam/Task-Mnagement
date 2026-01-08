@@ -7,15 +7,12 @@ A robust Task Management API built with Spring Boot that provides endpoints for 
 - **Backend Framework**: Spring Boot 3.x
 - **Build Tool**: Maven
 - **Java Version**: 17+
-- **Database**: H2 (in-memory, for development)
+- **Database**: (in-memory, for development)
 - **API Documentation**: SpringDoc OpenAPI 3.0 (Swagger UI)
-- **Testing**: JUnit, Mockito
 - **Validation**: Bean Validation API
-
 ## Prerequisites
-
 - JDK 17 or later
-- Maven 3.6.0 or later
+- Maven 3.2.0 or later
 - (Optional) Your preferred IDE (IntelliJ IDEA, Eclipse, etc.)
 
 ## Building the Project
@@ -57,41 +54,21 @@ http://localhost:8080/swagger-ui.html
 
 This provides interactive API documentation where you can test all available endpoints.
 
-## API Endpoints
-
-- **User Management**:
-  - `POST /users` - Create a new user
-  - `GET /users/{id}` - Get user by ID
-
-- **Task Management**:
-  - `POST /tasks` - Create a new task
-  - `GET /tasks/{id}` - Get task by ID
-  - `PUT /users/{id}/tasks`- Update task
-    
-
 ## Design Decisions
 
 1. **Layered Architecture**: The application follows a clean architecture with clear separation of concerns:
    - Controllers for handling HTTP requests
    - Services for business logic
-   - Repositories for data access
    - DTOs for data transfer between layers
 
 2. **Error Handling**: Comprehensive error handling with appropriate HTTP status codes and meaningful error messages.
 
 3. **Validation**: Input validation using Bean Validation API to ensure data integrity.
-
-4. **Pagination**: List endpoints support pagination for better performance with large datasets.
-
 5. **API Documentation**: Integrated Swagger UI for interactive API documentation.
-
-6. **Testing**: Comprehensive test coverage with unit and integration tests.
-
 ## Assumptions
 
-1. The application uses an in-memory H2 database by default for development purposes.
-2. For production, you would typically configure a persistent database like PostgreSQL or MySQL.
-3. Authentication and authorization are not implemented in the current version but can be added using Spring Security.
+1. The application uses an in-memory storage structure by default for development purposes.
+2. Authentication and authorization are not implemented in the current version but can be added using Spring Security.
 
 ## Contributing
 
