@@ -61,17 +61,13 @@ This provides interactive API documentation where you can test all available end
 
 - **User Management**:
   - `POST /api/users` - Create a new user
-  - `GET /api/users` - Get all users
   - `GET /api/users/{id}` - Get user by ID
-  - `PUT /api/users/{id}` - Update user
-  - `DELETE /api/users/{id}` - Delete user
 
 - **Task Management**:
   - `POST /api/tasks` - Create a new task
-  - `GET /api/tasks` - Get all tasks
   - `GET /api/tasks/{id}` - Get task by ID
   - `PUT /api/tasks/{id}` - Update task
-  - `DELETE /api/tasks/{id}` - Delete task
+    
 
 ## Design Decisions
 
